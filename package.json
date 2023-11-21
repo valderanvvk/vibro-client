@@ -2,10 +2,10 @@
   "name": "free-node-ts",
   "version": "0.1.0",
   "description": "",
-  "main": "./build/index.js",
+  "main": "./dist/index.js",
   "type": "commonjs",
   "scripts": {
-    "start": "node dist/index.js",
+    "start": "node dist/index.js"§
   },
   "keywords": [],
   "author": "",
