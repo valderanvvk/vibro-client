@@ -1,18 +1,18 @@
 "use strict";
-var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
+var __createBinding = (this && this.__createBinding) || (Object.create ? (function (o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     var desc = Object.getOwnPropertyDescriptor(m, k);
     if (!desc || ("get" in desc ? !m.__esModule : desc.writable || desc.configurable)) {
-      desc = { enumerable: true, get: function() { return m[k]; } };
+        desc = { enumerable: true, get: function () { return m[k]; } };
     }
     Object.defineProperty(o, k2, desc);
-}) : (function(o, m, k, k2) {
+}) : (function (o, m, k, k2) {
     if (k2 === undefined) k2 = k;
     o[k2] = m[k];
 }));
-var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function(o, v) {
+var __setModuleDefault = (this && this.__setModuleDefault) || (Object.create ? (function (o, v) {
     Object.defineProperty(o, "default", { enumerable: true, value: v });
-}) : function(o, v) {
+}) : function (o, v) {
     o["default"] = v;
 });
 var __importStar = (this && this.__importStar) || function (mod) {
@@ -47,7 +47,7 @@ const analytics_1 = require("./analytics");
 const serialport_1 = require("serialport");
 const { ReadlineParser } = require('@serialport/parser-readline');
 const App = () => __awaiter(void 0, void 0, void 0, function* () {
-    if (init_1.config.screen.position().range.x < 135 || init_1.config.screen.position().range.y < 30) {
+    if (init_1.config.screen.position().range.x < 100 || init_1.config.screen.position().range.y < 30) {
         console.log(chalk_1.default.bold.red('Ошибка!'), 'Маленькое разрешение экрана!');
         console.log('минимальное разрешение: 135x30');
         process.exit(0);
